@@ -41,8 +41,8 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    background-image: url("/images/moroccan-flower.png");
+body { /* attention au chemin d'accès : ../ pour remonter d'un niveau */
+    background-image: url("../images/moroccan-flower.png");
 }
 
 body {
@@ -328,10 +328,11 @@ h2 {
     line-height: 1;
 }
 
-.descriptions {
+/* Mise en commentaire car .descriptions ne doit pas être un conteneur Flex sur l'écran étroit */
+/*.descriptions {
     display: flex;
     justify-content: space-between;
-}
+}*/
 
 @media (min-width: 600px) {
     .descriptions {
